@@ -67,7 +67,7 @@ module "rds" {
     master_username = var.master_username
     master_password = var.master_password
     data_layer_sg_id = module.security.data_layer_sg_id
-    tags = var.tag
+    tags = var.tags
 }
 
 # call autoscaling module
