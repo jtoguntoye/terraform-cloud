@@ -65,7 +65,7 @@ module "rds" {
     private_subnet3_id = module.vpc.private_subnet3-id
     private_subnet4_id = module.vpc.private_subnet4-id
     master_username = var.master_username
-    master_password = var.master_username
+    master_password = var.master_password
     data_layer_sg_id = module.security.data_layer_sg_id
     tags = var.tags
 }

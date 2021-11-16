@@ -44,34 +44,37 @@
       default = ""
     }
 
-    variable "eip_name" {
-    }
+    # variable "eip_name" {
+    #     default = "eip"
+    # }
 
-    variable "nat_gw" {  
-    }
+    # variable "nat_gw" {
+    #     default = "nat_gw"  
+    # }
 
-    variable "private-rtb-name" {
-    }
+    # variable "private-rtb-name" {
+    #     default = "privatertb"
+    # }
 
-    variable "public-rtb-name" {
-    }
+    # variable "public-rtb-name" {
+    # }
 
-    variable "ext-alb-sg-name" {
-        type = string
-    }
+    # variable "ext-alb-sg-name" {
+    #     type = string
+    # }
 
     variable "ami" {
   type        = string
   description = "AMI ID for the launch template"
   }
   
-  variable "images" {
-      type = map(string)
-      default = {
-          eu-west-3 = ""
-      }
+#   variable "images" {
+#       type = map(string)
+#       default = {
+#           eu-west-3 = ""
+#       }
     
-  }
+#   }
   variable "keypair" {
     type = string
     description  = "keypair for the instances"
@@ -84,12 +87,12 @@
     
   }
 
-  variable master_username {
+  variable "master_username" {
       type = string
       description = "kiff-db master username"
   }
 
-  variable master_password {
+  variable "master_password" {
       type = string
       description = "kiff-db master password"
   }
